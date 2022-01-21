@@ -1,0 +1,268 @@
+:root {
+  --dark-bg: #000;
+  --yellow-bg: rgb(247, 191, 20);
+  --border-grey: #cbd5e0;
+  --ash-bg: #F7F7F7;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+h2 {
+     font-weight: 600;
+     font-size: 2rem;
+}
+
+
+.big-text {
+     font-size: 22px;
+     font-weight: 500;
+}
+
+a {
+     text-decoration: none;
+}
+
+img {
+     max-width: 100%;
+     /* display: block; */
+}
+
+.dark-bg {
+     background: var(--dark-bg);
+}
+
+.ash-bg {
+     background: var(--ash-bg);
+}
+
+.white-bg {
+     background: #F4F4F4;
+}
+
+.yellow-bg {
+     background: var(--yellow-bg);
+}
+
+.dark-txt {
+     color: var(--dark-bg);
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 1%;
+}
+
+.nav-link, .dropdown-toggle {
+  color: #fff;
+}
+
+.nav-download {
+     color: var(--yellow-bg);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--yellow-bg);
+}
+
+.nigeria {
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.header {
+  background: url(../images/indexHero.png);
+  /* height: 100vh; */
+  padding: 7% 15%;
+  color: #fff;
+  text-align: center;
+}
+
+.header-text {
+     padding: 8% 0 3%;
+}
+
+.header-tab {
+     background: #FFF;
+     /* width: 85%; */
+     border-radius: 13px;
+     margin: auto;
+     padding: 3%;
+}
+
+.nav-tabs {
+     border-bottom: 2px solid #cbd5e0;
+}
+
+.nav-tabs .nav-link {
+     border: none;
+     color: #cbd5e0;
+}
+
+.tab-content {
+     text-align: left;
+}
+
+.tab-content p {
+     font-size: 18px;
+}
+
+.tab-input-wrapper {
+     background: #F7F7F7;
+     border: #ADB5BD;
+}
+
+input {
+     border: none;
+     background: #F7F7F7;
+     width: 100%;
+}
+
+input:focus {
+     outline: none;
+     box-shadow: none;
+}
+
+/* input::placeholder {
+     color: #000;
+     font-weight: 500;
+} */
+
+.travel-treepz {
+     /* width: 90%; */
+     padding: auto;
+}
+
+.daily-treepz-download {
+     background: var(--dark-bg);
+     color: var(--yellow-bg);
+     max-width: 100%;
+     padding: 3% 0.5%;
+     margin: auto;
+     border-radius: 10px;
+}
+
+.download-img {
+     width: 4.5rem;
+     margin-left: 1rem;
+     cursor: pointer;
+}
+
+.stat {
+     font-size: 28px;
+     padding: 1.5% 15%;
+     margin: 0;
+}
+
+.count {
+     font-weight: 700;
+}
+
+/* Features section */
+
+#features {
+     padding: 7% 10%;
+}
+
+.features-header {
+     padding: 7% 0;
+}
+
+.features-wrapper {
+     margin-bottom: 100px;
+     text-align: left;
+}
+
+.features-img {
+     width: 65%;
+}
+
+#testimonials {
+     background: #F7F7F7;
+     padding: 7% 10%;
+     text-align: left;
+}
+
+
+.news {
+     width: 40%;
+     margin: auto;
+     background: #FFF;
+     padding: 2%;
+     border-radius: 10px;
+     text-align: center;
+     gap: .7rem;
+}
+
+.carousel-item {
+     padding: 2%;
+}
+
+.news img  {
+     max-width: 155px
+}
+
+.channels {
+     width: 20%;
+}
+
+#cta {
+     padding: 7% 2% 15%;
+     background: url(/images/cityBg.png) no-repeat bottom;
+     text-align: left;
+}
+
+.app-section {
+     background: var(--ash-bg);
+     padding: 5% 3%;
+     margin-top: 15%;
+     /* position: relative; */
+     line-height: 1.5;
+}
+
+.iphone-front {
+     height: 512px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     
+}
+
+.download-btn {
+     max-width: 30%;
+}
+
+#footer {
+     
+     padding:5% 0;
+     /* text-align: left; */
+}
+
+#footer h3 {
+     color: #FFF;
+}
+

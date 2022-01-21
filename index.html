@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+     <title>Hello, world!</title>
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,400;1,300&family=Sacramento&family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap"
+          rel="stylesheet">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- Font Awesome -->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+     <!-- Materialize -->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+
+     <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+     <section id="title">
+          <nav class="navbar navbar-expand-lg container-fluid dark-bg" >
+               <div class="container">
+                    <a class="navbar-brand" href="#">
+                         <img src="./images/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                         <ul class="navbar-nav ms-auto">
+                              <li class="nav-item">
+                                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Treepz
+                                   </a>
+                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Daily Treepz</a></li>
+                                        <li><a class="dropdown-item" href="#">Travel Treepz</a></li>
+                                        <li><a class="dropdown-item" href="#">Corporate</a></li>
+                                   </ul>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">Become a hero</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">Hire a bus</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link nav-download" href="#">Download the app</a>
+                              </li>
+                              <li class="nav-item dropdown nigeria">
+                                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="./images/NG.png" alt="Nigeria">
+                                   </a> Nigeria
+                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Nigeria</a></li>
+                                        <li><a class="dropdown-item" href="#">Ghana</a></li>
+                                        <li><a class="dropdown-item" href="#">Uganda</a></li>
+                                   </ul>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+     </section>
+
+     <div class="header container-fluid">
+          <div class="header-text">
+               <h1> Hassle-free transportation, every time you hit the road. </h1>
+               <p class="big-text">A simpler, comfortable and affordable way to move.</p>
+          </div>
+     
+          <!-- Treepz Tabs -->
+          <div class="header-tab dark-txt container">
+               <ul class="nav nav-tabs justify-content-center"">
+                    <li class="nav-item">
+                         <a class="nav-link my-1 active" aria-current="page" data-bs-toggle="tab" href="#travel-treepz">Travel Treepz</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link my-1" data-bs-toggle="tab" href="#daily-treepz">Daily Treepz</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link my-1" data-bs-toggle="tab" href="#corporate-treepz">Corporate Treepz</a>
+                    </li>
+               </ul>
+               <div class="tab-content mt-4">
+                    <div class="tab-pane active" id="travel-treepz">
+                         
+                              <div>
+                                   <p>
+                                        Find bus tickets for intercity transportation
+                                   </p>
+                              </div>
+                                   <div class="row">
+                                        <div class="col-md-3 col-sm-6 mb-2">
+                                             <div class="tab-input-wrapper border rounded px-2">
+                                                  <p>From</p>
+                                                  <input type="text" name="ticket-from" id="" class="ticket-from" placeholder="From (e.g geri-alimi)">
+                                             </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 mb-2">
+                                             <div class="tab-input-wrapper border rounded px-2">
+                                                  <p>To</p>
+                                                  <input type="text" name="ticket-from" id="ticket-from" placeholder="To (e.g Osogbo)">
+                                             </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 mb-2">
+                                             <div class="tab-input-wrapper border rounded px-2">
+                                                  <p>Departure</p>
+                                                  <input type="date" name="ticket-from" id="" class="ticket-from">
+                                             </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 mb-2">
+                                             <div class="tab-input-wrapper border rounded px-2">
+                                                  <p>Passengers</p>
+                                                  <input type="text" name="ticket-to" id="ticket-to" placeholder="1 Adults, 0 Children">
+                                             </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 col-sm-6 mb-2">
+                                             <button class="btn btn-lg btn-secondary">Search Treepz</button>
+                                        </div>
+                                   </div>
+                         
+                    </div>
+
+                    <div class="tab-pane" id="daily-treepz">
+                          <div>
+                                   <p>
+                                        Easy transportation for daily commute
+                                   </p>
+                              </div>
+
+                                   <div class="row  daily-treepz-download">
+                                        <div class="col-md-8 col-sm-12">Download the Treepz mobile app to enjoy real time Daily Treepz</div>
+                                        <div class="col">
+                                                  <button class="btn btn-outline-warning" type="button"><span class="fab fa-apple"></span> Download</button>
+                                                  <button class="btn btn-outline-light ms-2" type="button"><span class="fab fa-google-play"></span> Download</button>
+
+                                        </div>
+                                   </div>
+                    </div>
+
+                    <div class="tab-pane" id="corporate-treepz">
+                    
+                         <div>
+                              <p>
+                                   Corporate transportation tailored to your needs
+                              </p>
+                         </div>
+                         <div class="row">
+                              <div class="col-md-3 col-sm-6 mb-2">
+                                   <div class="tab-input-wrapper border rounded px-2">
+                                        <p>Conmpany Name</p>
+                                        <input type="text" name="company name" id="" class="" placeholder="Company Name">
+                                   </div>
+                              </div>
+                              <div class="col-md-3 col-sm-6 mb-2">
+                                   <div class="tab-input-wrapper border rounded px-2">
+                                        <p>Email</p>
+                                        <input type="email" name="email" id="" placeholder="email@company.com">
+                                   </div>
+                              </div>
+                              <div class="col-md-3 col-sm-6 mb-2">
+                                   <div class="tab-input-wrapper border rounded px-2">
+                                        <p>Phone No</p>
+                                        <input type="tel" name="phone" id="" class="" placeholder="0800 123 4567">
+                                   </div>
+                              </div>
+                              <div class="col-md-3 col-sm-6 mb-2">
+                                   <div class="tab-input-wrapper border rounded px-2">
+                                        <p>Comments</p>
+                                        <input type="text" name="comments" id="" placeholder="Comments (Optional)">
+                                   </div>
+                              </div>
+                    
+                              <div class="col-md-3 col-sm-6 mb-2">
+                                   <button class="btn btn-lg btn-secondary">Request Treepz</button>
+                              </div>
+                         </div>
+                    
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <p class="stat dark-txt white-bg">Total number of trips completed <span class="count">646,193</span></p>
+     
+
+     <!-- Features Section -->
+
+     <section id="features" class="container-fluid yellow-bg">
+
+          <h1 class="features-header">Solutions carefully crafted for all of your transport needs</h1>
+          <div class="container">
+               <div class="row features-wrapper">
+                    <div class="col-md-6">
+                         <img src="./images/improve-your-commute.png" alt="" class="features-img">
+                    </div>
+                    <div class="col-md-6">
+                         <h2>Simple, comfortable, and predictable everyday commuting for everyone.</h2>
+                    </div>
+               </div>
+               
+               <div class="row flex-md-row-reverse features-wrapper">
+                    <div class="col-md-6 ms-auto">
+                         <img src="./images/take-control.png" alt="" class="features-img">
+                    </div>
+               
+                    <div class="col-md-6">
+                         <h2>Bus tickets to a variety of bus transport services, so you can save time and money on your next trip.</h2>
+                    </div>
+               </div>
+               
+               <div class="row features-wrapper">
+                    <div class="col-md-6">
+                         <img src="./images/less-stress.png" alt="" class="features-img">
+                    </div>
+                    <div class="col-md-6">
+                         <h2>Take the weight of commute off your staff and make transportation one less thing to worry about for them.
+                         </h2>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- Testimonials -->
+
+     <section id="testimonials" class="container-fluid">
+          <div>
+               <h2>We’ve been in the news</h2>
+               <p class="big-text">Read about all we’ve been doing, and what the press is saying about us</p>
+          </div>
+          
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="row flex-column news">
+          <div class="col">
+               <img src="./images/vanguardlogo.png" alt="">
+          </div>
+          <div class="col">
+               <p>
+                    <q>
+                         ipsum dolor, sit amet consectetur a elit. In laborum quam non esse libero,
+                         eveniet!
+                    </q>
+               </p>
+          </div>
+          <div class="col">
+               <button class="btn btn-secondary">Read More</button>
+          </div>
+     </div>
+
+     
+    </div>
+    <div class="carousel-item">
+     <div class="row flex-column news">
+          <div class="col">
+               <img src="./images/itnews.png" alt="">
+          </div>
+          <div class="col">
+               <p>
+                    <q>
+                         Lorem ipsum dolor, sit amet consectetur. In laborum quam non esse libero,
+                         eveniet!
+                    </q>
+               </p>
+          </div>
+          <div class="col">
+               <button class="btn btn-secondary">Read More</button>
+          </div>
+     </div>
+    </div>
+    <div class="carousel-item">
+     <div class="row flex-column news">
+          <div class="col">
+               <img src="./images/thisday.png" alt="">
+          </div>
+          <div class="col">
+               <p>
+                    <q>
+                         Lorem ipsum dolor, sit amet consecte. In laborum quam non esse libero,
+                         eveniet!
+                    </q>
+               </p>
+          </div>
+          <div class="col">
+               <button class="btn btn-secondary">Read More</button>
+          </div>
+     </div>
+    </div>
+    <div class="carousel-item">
+     <div class="row flex-column news">
+          <div class="col">
+               <img src="./images/channels.jpeg" alt="channels_tv" class="channels">
+          </div>
+          <div class="col">
+               <p>
+                    <q>
+                         Lorem ipsum dolor, sit amet consecte. In laborum quam non esse libero,
+                         eveniet!
+                    </q>
+               </p>
+          </div>
+          <div class="col">
+               <button class="btn btn-secondary">Read More</button>
+          </div>
+     </div>
+    </div>
+    <div class="carousel-item">
+     <div class="row flex-column news">
+          <div class="col">
+               <img src="./images/CNBC_logo .png" alt="">
+          </div>
+          <div class="col">
+               <p>
+                    <q>
+                         Lorem ipsum dolor, sit amet consecte. In laborum quam non esse libero,
+                         eveniet!
+                    </q>
+               </p>
+          </div>
+          <div class="col">
+               <button class="btn btn-secondary">Read More</button>
+          </div>
+     </div>
+    </div>
+    <div class="carousel-item">
+     <div class="row flex-column news">
+          <div class="col">
+               <img src="./images/Businessday.png" alt="">
+          </div>
+          <div class="col">
+               <p>
+                    <q>
+                         Lorem ipsum dolor, sit amet consecte. In laborum quam non esse libero,
+                         eveniet!
+                    </q>
+               </p>
+          </div>
+          <div class="col">
+               <button class="btn btn-secondary">Read More</button>
+          </div>
+     </div>
+    </div>
+  </div>
+
+</div>
+
+          
+     </section>
+
+     
+
+     <!-- Call to action -->
+
+     <section id="cta" class="container yellow-bg">
+
+          <div>
+               <h2> Move cities and communities with shared mobility </h2>
+          </div>
+          <div class="container-fluid row gap-lg-3 justify-content-between">
+               <div class="col ash-bg p-2">
+                    <img src="./images/bigBusCut.png" alt="coaster-bus">
+                    <h3>Coaster Bus</h3>
+                    <p>20 - 32 Seater</p>
+               </div>
+               <div class="col ash-bg p-2">
+                    <img src="./images/smallBusCut.png" alt="sprinter-bus">
+                    <h3>Sprinter/Mini Bus</h3>
+                    <p>12 - 14 Seater</p>
+               </div>
+               <div class="col ash-bg p-2">
+                    <img src="./images/suvCut.png" alt="">
+                    <h3>SUV</h3>
+                    <p>3 - 5 Seater</p>
+               </div>
+          </div>
+
+           <div class="container-fluid row justify-content-between app-section">
+
+               <div class="col-lg-6">
+                    <h2>Quick and easy ticket booking with our mobile app.</h2>
+                    <p>Enjoy a seamless, easy and fast experience whenever
+                         you want to book or plan a trip. We’ve simplified the
+                         booking process so you can save time and money</p>
+                    <div>
+                         <img src="./images/appstore.png" alt="app-store" class="download-btn">
+                         <img src="./images/playstore.png" alt="play-store" class="download-btn ms-2">
+                    </div>
+               </div>
+
+               <div class="col-lg-6" style="position: relative;">
+                    <img src="./images/iphoneFront.png" alt="iphone-front" class="iphone-front">
+               </div>
+           </div>
+
+     </section>
+
+     <section id="footer" class="container-fluid dark-bg mx-auto">
+
+          <a class="btn-floating btn-large cyan pulse"><span class="material-icons"></span></a>
+
+          <div class="row container" style="margin: auto; text-align: left;">
+               <ul class="nav col-auto flex-column">
+                    <li class="nav-item">
+                         <p class="nav-link footer-link-header">Who we are</p>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Media coverage</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Join our team</a>
+                    </li>
+               </ul>
+
+               <ul class="nav col-auto flex-column">
+                    <li class="nav-item">
+                         <p class="nav-link footer-link-header">Products</p>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Daily Treepz</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Travel Treepz</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Corporate Treepz</a>
+                    </li>
+               </ul>
+
+               <ul class="nav col-auto flex-column">
+                    <li class="nav-item">
+                         <p class="nav-link footer-link-header">Contacts</p>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Lagos - 08171000085</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" >Abuja - 08171100552</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Delta - 08171100553</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="mailto:info@treepz.com">info@treepz.com</a>
+                    </li>
+               </ul>
+
+               <ul class="nav col-auto flex-column">
+                    <li class="nav-item">
+                         <p class="nav-link footer-link-header">Follow</p>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link">Youtube</a>
+                    </li>
+               </ul>
+
+               <ul class="nav col-auto flex-column">
+                    <li class="nav-item">
+                         <p class="nav-link footer-link-header">Policy</p>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Terms and Conditions</a>
+                    </li>
+               </ul>
+
+               <ul class="nav col-auto flex-column">
+                    <li class="nav-item">
+                         <p class="nav-link footer-link-header">Support</p>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#">Blog</a>
+                    </li>
+               </ul>
+          </div>
+          <hr class="">
+          <div class="container-fluid row justify-content-around align-items-center border-top pt-3">
+               <div class="col-auto">
+                    <img src="./images/logo.svg" alt="logo">
+               </div>
+
+
+               <div class="col-auto">
+                    <!-- <p>Available on IOS and Android</p> -->
+                    <div>
+                         <p>
+                              Available on ios and Android
+                         </p>
+                         <button class="btn btn-outline-warning" type="button"><span class="fab fa-apple"></span> Download</button>
+                         <button class="btn btn-outline-light ms-2" type="button"><span class="fab fa-google-play"></span> Download</button>
+                    </div>
+               </div>
+
+               <div class="col-auto">
+
+                    <div class="nav-item dropdown nigeria">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img src="./images/NG.png" alt="Nigeria">
+                         </a> Nigeria
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Nigeria</a></li>
+                              <li><a class="dropdown-item" href="#">Ghana</a></li>
+                              <li><a class="dropdown-item" href="#">Uganda</a></li>
+                         </ul>
+                    </d>
+               </div>
+          </div>
+     </section>
+
+
+
+     <!--Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
