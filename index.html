@@ -29,17 +29,19 @@
 
 <body>
      <section id="title">
-          <nav class="navbar navbar-expand-lg container-fluid dark-bg" >
+          <nav class="navbar navbar-expand-lg container-fluid dark-bg navbar-dark" >
                <div class="container">
                     <a class="navbar-brand" href="#">
                          <img src="./images/logo.svg" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
+                         <span class="navbar-toggler-icon">
+                              
+                         </span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                         <ul class="navbar-nav ms-auto">
+                         <ul class="navbar-nav ms-auto align-items-center">
                               <li class="nav-item">
                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                               </li>
@@ -91,14 +93,14 @@
      
           <!-- Treepz Tabs -->
           <div class="header-tab dark-txt container">
-               <ul class="nav nav-tabs justify-content-center"">
-                    <li class="nav-item">
+               <ul class="nav nav-tabs justify-content-around"">
+                    <li class="nav-item col-4">
                          <a class="nav-link my-1 active" aria-current="page" data-bs-toggle="tab" href="#travel-treepz">Travel Treepz</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item col-4">
                          <a class="nav-link my-1" data-bs-toggle="tab" href="#daily-treepz">Daily Treepz</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item col-4">
                          <a class="nav-link my-1" data-bs-toggle="tab" href="#corporate-treepz">Corporate Treepz</a>
                     </li>
                </ul>
@@ -107,36 +109,39 @@
                          
                               <div>
                                    <p>
-                                        Find bus tickets for intercity transportation
+                                        A better way to buy bus travel tickets
                                    </p>
                               </div>
                                    <div class="row">
-                                        <div class="col-md-3 col-sm-6 mb-2">
+                                        <div class="col-sm-6 col-lg-3 mb-2">
                                              <div class="tab-input-wrapper border rounded px-2">
                                                   <p>From</p>
                                                   <input type="text" name="ticket-from" id="" class="ticket-from" placeholder="From (e.g geri-alimi)">
                                              </div>
                                         </div>
-                                        <div class="col-md-3 col-sm-6 mb-2">
+
+                                        <div class="col-sm-6 col-lg-3 mb-2">
                                              <div class="tab-input-wrapper border rounded px-2">
                                                   <p>To</p>
                                                   <input type="text" name="ticket-from" id="ticket-from" placeholder="To (e.g Osogbo)">
                                              </div>
                                         </div>
-                                        <div class="col-md-3 col-sm-6 mb-2">
+
+                                        <div class="col-sm-6 col-lg-3 mb-2">
                                              <div class="tab-input-wrapper border rounded px-2">
                                                   <p>Departure</p>
                                                   <input type="date" name="ticket-from" id="" class="ticket-from">
                                              </div>
                                         </div>
-                                        <div class="col-md-3 col-sm-6 mb-2">
+
+                                        <div class="col-sm-6 col-lg-3 mb-2">
                                              <div class="tab-input-wrapper border rounded px-2">
                                                   <p>Passengers</p>
                                                   <input type="text" name="ticket-to" id="ticket-to" placeholder="1 Adults, 0 Children">
                                              </div>
                                         </div>
-                                        
-                                        <div class="col-md-3 col-sm-6 mb-2">
+
+                                        <div class="col mb-2">
                                              <button class="btn btn-lg btn-secondary">Search Treepz</button>
                                         </div>
                                    </div>
@@ -150,7 +155,7 @@
                                    </p>
                               </div>
 
-                                   <div class="row  daily-treepz-download">
+                                   <div class="row flex-md-column daily-treepz-download">
                                         <div class="col-md-8 col-sm-12">Download the Treepz mobile app to enjoy real time Daily Treepz</div>
                                         <div class="col">
                                                   <button class="btn btn-outline-warning" type="button"><span class="fab fa-apple"></span> Download</button>
@@ -168,32 +173,32 @@
                               </p>
                          </div>
                          <div class="row">
-                              <div class="col-md-3 col-sm-6 mb-2">
+                              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                                    <div class="tab-input-wrapper border rounded px-2">
                                         <p>Conmpany Name</p>
                                         <input type="text" name="company name" id="" class="" placeholder="Company Name">
                                    </div>
                               </div>
-                              <div class="col-md-3 col-sm-6 mb-2">
+                              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                                    <div class="tab-input-wrapper border rounded px-2">
                                         <p>Email</p>
                                         <input type="email" name="email" id="" placeholder="email@company.com">
                                    </div>
                               </div>
-                              <div class="col-md-3 col-sm-6 mb-2">
+                              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                                    <div class="tab-input-wrapper border rounded px-2">
                                         <p>Phone No</p>
                                         <input type="tel" name="phone" id="" class="" placeholder="0800 123 4567">
                                    </div>
                               </div>
-                              <div class="col-md-3 col-sm-6 mb-2">
+                              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                                    <div class="tab-input-wrapper border rounded px-2">
                                         <p>Comments</p>
                                         <input type="text" name="comments" id="" placeholder="Comments (Optional)">
                                    </div>
                               </div>
                     
-                              <div class="col-md-3 col-sm-6 mb-2">
+                              <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                                    <button class="btn btn-lg btn-secondary">Request Treepz</button>
                               </div>
                          </div>
@@ -210,9 +215,11 @@
 
      <section id="features" class="container-fluid yellow-bg">
 
-          <h1 class="features-header">Solutions carefully crafted for all of your transport needs</h1>
+
+
+          <h1 class="features-header">Solutions carefully crafted for all of your transport needs.</h1>
           <div class="container">
-               <div class="row features-wrapper">
+               <div class="row features-wrapper justify-content-center">
                     <div class="col-md-6">
                          <img src="./images/improve-your-commute.png" alt="" class="features-img">
                     </div>
@@ -222,11 +229,11 @@
                </div>
                
                <div class="row flex-md-row-reverse features-wrapper">
-                    <div class="col-md-6 ms-auto">
+                    <div class="col-md-6">
                          <img src="./images/take-control.png" alt="" class="features-img">
                     </div>
                
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                          <h2>Bus tickets to a variety of bus transport services, so you can save time and money on your next trip.</h2>
                     </div>
                </div>
@@ -374,12 +381,12 @@
 
      <!-- Call to action -->
 
-     <section id="cta" class="container yellow-bg">
+     <section id="cta" class="container-fluid yellow-bg">
 
           <div>
                <h2> Move cities and communities with shared mobility </h2>
           </div>
-          <div class="container-fluid row gap-lg-3 justify-content-between">
+          <div class="container-fluid row gap-lg-3 justify-content-between busView">
                <div class="col ash-bg p-2">
                     <img src="./images/bigBusCut.png" alt="coaster-bus">
                     <h3>Coaster Bus</h3>
@@ -394,6 +401,32 @@
                     <img src="./images/suvCut.png" alt="">
                     <h3>SUV</h3>
                     <p>3 - 5 Seater</p>
+               </div>
+          </div>
+
+          <div id="testimonialsCarousel" class="carousel slide container-fluid busViewSecond" data-bs-ride="carousel">
+               <div class="carousel-inner container-fluid">
+                    <div class="carousel-item active">
+                         <div class="ash-bg p-2">
+                              <img src="./images/bigBusCut.png" alt="coaster-bus">
+                              <h3>Coaster Bus</h3>
+                              <p>20 - 32 Seater</p>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <div class="ash-bg p-2">
+                              <img src="./images/smallBusCut.png" alt="sprinter-bus">
+                              <h3>Sprinter/Mini Bus</h3>
+                              <p>12 - 14 Seater</p>
+                         </div>
+                    </div>
+                    <div class="carousel-item">
+                         <div class="ash-bg p-2">
+                              <img src="./images/suvCut.png" alt="">
+                              <h3>SUV</h3>
+                              <p>3 - 5 Seater</p>
+                         </div>
+                    </div>
                </div>
           </div>
 
@@ -421,7 +454,7 @@
 
           <a class="btn-floating btn-large cyan pulse"><span class="material-icons"></span></a>
 
-          <div class="row container" style="margin: auto; text-align: left;">
+          <div class="row container gap-3" style="margin: auto; text-align: left;">
                <ul class="nav col-auto flex-column">
                     <li class="nav-item">
                          <p class="nav-link footer-link-header">Who we are</p>
@@ -519,7 +552,7 @@
                </ul>
           </div>
           <hr class="">
-          <div class="container-fluid row justify-content-around align-items-center border-top pt-3">
+          <div class="container-fluid row justify-content-around align-items-center border-top pt-3 gap-3">
                <div class="col-auto">
                     <img src="./images/logo.svg" alt="logo">
                </div>
@@ -536,7 +569,7 @@
                     </div>
                </div>
 
-               <div class="col-auto">
+               <div class="col-auto col-sm-3">
 
                     <div class="nav-item dropdown nigeria">
                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"

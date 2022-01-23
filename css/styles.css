@@ -18,12 +18,12 @@ body {
 
 h1{
   font-weight: 700;
-  font-size: 3.6rem;
+  /* font-size: 3.6rem; */
 }
 
 h2 {
      font-weight: 600;
-     font-size: 2rem;
+     /* font-size: 2rem; */
 }
 
 
@@ -74,7 +74,7 @@ img {
 }
 
 .nav-download {
-     color: var(--yellow-bg);
+     color: var(--yellow-bg) !important;
 }
 
 .nav-link:hover,
@@ -188,8 +188,9 @@ input:focus {
 }
 
 .features-header {
-     padding: 7% 0;
-}
+     padding: 5% 0;
+     
+     }
 
 .features-wrapper {
      margin-bottom: 100px;
@@ -208,7 +209,7 @@ input:focus {
 
 
 .news {
-     width: 40%;
+     width: 60%;
      margin: auto;
      background: #FFF;
      padding: 2%;
@@ -233,6 +234,10 @@ input:focus {
      padding: 7% 2% 15%;
      background: url(/images/cityBg.png) no-repeat bottom;
      text-align: left;
+}
+
+.busViewSecond {
+     display: none;
 }
 
 .app-section {
@@ -262,7 +267,53 @@ input:focus {
      /* text-align: left; */
 }
 
+.footer-link-header {
+     font-weight: 700;
+}
+
 #footer h3 {
      color: #FFF;
 }
 
+
+@media (max-width: 768px) {
+     .header {
+          padding: 25% 3%;
+     }
+
+     .stat {
+          font-size: 16px;
+          padding: 2%;
+     }
+
+     .features-wrapper {
+     margin-bottom: 25px;
+     text-align: center;
+     }
+
+     .features-wrapper h2 {
+          text-align: left;
+     }
+
+     .features-img {
+          width: 80%;
+          
+          margin-bottom: 10%;
+     }
+
+     .news {
+          width: 90%;
+     }
+
+     .busView {
+          display: none;
+     }
+
+     .busViewSecond {
+          display: block;
+     }
+
+     .iphone-front {
+          display: none;
+     }
+}
